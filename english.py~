@@ -1,0 +1,11 @@
+import httplib2
+from bs4 import BeautifulSoup
+http = httplib2.Http()
+
+def getEtymology(word):
+	status, response = http.request('http://www.etymonline.com/index.php?term=-'+word+'&allowed_in_frame=0')
+	soup = BeautifulSoup(response)
+	content=soup.find_all(id='dictionary');
+	print(content)
+print(getEtymology('abase'))
+
