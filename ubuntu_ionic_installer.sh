@@ -71,6 +71,11 @@ echo "export PATH=\$PATH:$ANDROID_SDK_PATH/tools" >> ".profile"
 echo "export PATH=\$PATH:$ANDROID_SDK_PATH/platform-tools" >> ".profile"
 echo "export PATH=\$PATH:$NODE_PATH/bin" >> ".profile"
 
+# Add Android and NPM paths to the profile to preserve settings on boot
+echo "export PATH=\$PATH:$ANDROID_SDK_PATH/tools" >> ".zshrc"
+echo "export PATH=\$PATH:$ANDROID_SDK_PATH/platform-tools" >> ".zshrc"
+echo "export PATH=\$PATH:$NODE_PATH/bin" >> ".zshrc"
+
 # Add Android and NPM paths to the temporary user path to complete installation
 export PATH=$PATH:$ANDROID_SDK_PATH/tools
 export PATH=$PATH:$ANDROID_SDK_PATH/platform-tools
