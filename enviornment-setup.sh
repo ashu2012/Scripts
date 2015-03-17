@@ -61,7 +61,7 @@ sudo apt-get update
 sudo apt-get install postgresql postgresql-contrib -y
 
 #tomcat
-sudo apt-get install tomcat7 #http://localhost:8080 should in case of success
+sudo apt-get install tomcat7 #http://localhost:8080 should work in case of success
 sudo apt-get install tomcat7-docs tomcat7-admin tomcat7-examples #additional packages
  
 echo "alias psqlre='sudo /etc/init.d/postgresql start'" >> ".zshrc"
